@@ -9,15 +9,15 @@ const rpc = new DiscordRPC.Client({ transport: "ipc" });
 
 async function setActivity() {
     if (!rpc) return;
-    const activity = {
+
+    rpc.setActivity({
         details: "Best Multi-Purpose Bot!",
         state: "https://pengubot.com",
         largeImageKey: "pengu_logo",
         largeImageText: "PenguBot",
         instance: false,
         startTimestamp: moment(openTimestamp).add(parse("-0s"), "ms").toDate()
-    };
-    rpc.setActivity(activity);
+    });
 }
 
 rpc.on("ready", () => {
