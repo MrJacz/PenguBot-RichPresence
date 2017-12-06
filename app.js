@@ -1,3 +1,4 @@
+require("electron");
 const DiscordRPC = require("discord-rpc");
 const parse = require("parse-duration");
 const moment = require("moment");
