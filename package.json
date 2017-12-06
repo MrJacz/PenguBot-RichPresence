@@ -1,0 +1,32 @@
+{
+  "name": "pengubot-discord-rpc",
+  "version": "1.0.0",
+  "description": "A small richpresence client for pengubot",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PenguBot/RichPresence.git"
+  },
+  "keywords": [
+    "Discord",
+    "discord-rpc",
+    "pengubot"
+  ],
+  "author": "Jacz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PenguBot/RichPresence/issues"
+  },
+  "homepage": "https://github.com/PenguBot/RichPresence#readme",
+  "dependencies": {
+    "@dnode/parse-duration": "^1.4.2",
+    "discord-rpc": "github:devsnek/discord-rpc",
+    "electron": "^1.7.9",
+    "moment": "^2.19.3",
+    "parse-duration": "^0.1.1",
+    "snekfetch": "^3.6.1"
+  }
+}
