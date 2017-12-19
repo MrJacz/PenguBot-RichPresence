@@ -8,9 +8,7 @@ DiscordRPC.register("380058252123308035");
 const rpc = new DiscordRPC.Client({ transport: "ipc" });
 
 function setActivity() {
-    if (!rpc) {
-       throw "There isn't a RPC!";   
-    } else {
+    if (!rpc) throw "There isn't a RPC!";   
       rpc.setActivity({
         details: "Best Multi-Purpose Bot!",
         state: "https://pengubot.com",
@@ -19,7 +17,6 @@ function setActivity() {
         instance: false,
         startTimestamp: moment(openTimestamp).add(parse("-0s"), "ms").toDate()
       });   
-    }
 }
 
 rpc.on("ready", () => {
