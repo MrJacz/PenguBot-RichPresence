@@ -22,11 +22,11 @@
   },
   "homepage": "https://github.com/PenguBot/RichPresence#readme",
   "dependencies": {
-    "@dnode/parse-duration": "^1.4.2",
-    "discord-rpc": "github:devsnek/discord-rpc",
-    "electron": "^1.7.9",
-    "moment": "^2.19.3",
+    "@dnode/parse-duration": "^1.4.6",
+    "discord-rpc": "github:discordjs/RPC",
+    "electron": "^1.7.12",
+    "moment": "^2.20.1",
     "parse-duration": "^0.1.1",
-    "snekfetch": "^3.6.1"
+    "snekfetch": "^3.6.4"
   }
 }
